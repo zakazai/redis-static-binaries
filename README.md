@@ -10,3 +10,4 @@ version number match a Redis version, the last is a patch number
 [redis]: https://github.com/redis/redis
 [releases]: https://github.com/phlummox-dev/redis-static-binaries/releases
 
+<!--- trigger --->
