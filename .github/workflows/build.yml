@@ -6,7 +6,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    container: alpine:3.11.11@sha256:71a2b866473e26e7c3dfcd7488975ed8d8ba46c495f76a50957fc11f2d6f4dec
+    container: alpine:latest
 
     steps:
     - uses: actions/checkout@v5
