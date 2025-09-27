@@ -9,7 +9,7 @@ jobs:
     container: alpine:3.11.11@sha256:71a2b866473e26e7c3dfcd7488975ed8d8ba46c495f76a50957fc11f2d6f4dec
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v5
 
     - name: fetch prerequisites
       run: |
@@ -53,7 +53,7 @@ jobs:
         ./runtest
 
     - name: store build artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: binaries
         path: |
