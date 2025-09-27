@@ -6,8 +6,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    container: ubuntu:22.04
-
+    container: alpine:latest
     steps:
     - uses: actions/checkout@v5
 
@@ -19,7 +18,8 @@ jobs:
           gcc \
           make \
           musl-dev \
-          openssl-dev
+          openssl-dev \
+          libssl-static
 
     - name: fetch source
       run: |
