@@ -32,7 +32,7 @@ jobs:
 
     - name: make
       run: |
-        make CFLAGS="-static" LDFLAGS="-static"
+        make CFLAGS="-static" LDFLAGS="-static" BUILD_TLS=yes
 
     - name: make test
       run: |
